@@ -1,0 +1,29 @@
+.text_green{
+  color:green;
+}
+
+input{
+  display: block;
+}
+ .text-blue{
+color: blue;
+ }
+
+ .background-grey{
+   background-color: grey;
+ }
+
+ label{
+   color: red;
+ }
+
+table,td,th{
+  border: 1px solid blue;
+  border-collapse: collapse;
+}
+
+td,th{
+   padding-left: 5px;
+   padding-right: 5px;
+   margin: 0px;
+}

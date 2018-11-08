@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Primos</title>
+</head>
+<body>
+
+
+
+<main>
+  <label for="inicio">Inicio</label>
+  <input type="number" id="inicio" name="inicio">
+  <label for="fin">Fin</label>
+  <input type="number" id="fin" name="fin">
+  <button onclick="primos()" type="button">Primos</button>
+  <p id="primos"></p>
+</main>
+
+
+
+  <script type="text/javascript">
+  function primos() {
+    var cont=0;
+    var resultado = "Primos: ";
+    var incio = document.getElementById("inicio").value + 0;
+    var fin = document.getElementById("fin").value + 0;
+    for (var i = inicio; i <= fin; i++) {
+      cont=0;
+
+        for (var l = 1; l < i; l++) {
+          if ((i%l)==0) {
+            cont++;
+          }
+        }
+
+
+      if (cont==2) {
+          resultado = resultado + " " + i;
+      }
+    }
+
+      document.getElementById("primos").innerHTML  = resultado;
+  }
+
+  </script>
+
+</body>
+</html>
