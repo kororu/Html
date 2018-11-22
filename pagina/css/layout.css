@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+	color: #666;
+	width: 702px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#top {
+	height: 173px;
+	width: inherit;
+	background-color: #060;
+}
+#banner {
+	background-color: #063;
+	height: 38px;
+	width: inherit;
+}
+#subbanner {
+	background-color: #060;
+	height: 17px;
+	width: inherit;
+}
+#content {
+	background-color:#333;
+	background-image:url(../images/home_0602_06.jpg);
+	background-repeat:no-repeat;
+	height: 442px;
+	width: inherit;
+}
+#footer {
+	background-color: #333333;
+	height: 98px;
+	width: inherit;
+}
+
+#contenta {
+	height: 442px;
+	width: 98px;
+	float:left;
+	display:table;
+}
+
+#contentb {
+	height: 442px;
+	width: 135px;
+	float:left;
+	display:table;
+	padding-top:68px;
+}
+#contentcompleto {
+	height: 442px;
+	width: 702px;
+}
+#contentc {
+	height: 442px;
+	width: 50px;
+	float:left;
+	display:table;
+}
+#contentd {
+	height: 442px;
+	width: 135px;
+	float:left;
+	display:table;
+	padding-top:68px;
+}
+#contente {
+	height: 442px;
+	width: 50px;
+	float:left;
+	display:table;
+}
+#contentf {
+	height: 442px;
+	width: 135px;
+	float:left;
+	display:table;
+	padding-top:68px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+		var table = document.getElementById("table");
+        $.getJSON("notas.json", function(result){
+			
+            $.each(result, function(i, val){
+				
+				
+				var row = table.insertRow(-1); 
+				
+				//NOMBRE
+                var nombre = row.insertCell(-1);
+				nombre.innerHTML = val.nombre+" ";
+				var paterno = row.insertCell(-1);
+				paterno.innerHTML = val.paterno+" ";
+				var materno = row.insertCell(-1);
+				materno.innerHTML = val.materno+" ";
+				
+				
+				//NOTAS
+				var nota1 = row.insertCell(-1);
+				nota1.innerHTML = val.nota1;
+				if(val.nota1 < 4 ){	
+					nota1.style.color = "red";	
+				}else{
+					nota1.style.color = "blue";	
+				}
+				var nota2 = row.insertCell(-1);
+				nota2.innerHTML = val.nota2;
+				if(val.nota2 < 4 ){	
+					nota2.style.color = "red";	
+				}else{
+					nota2.style.color = "blue";	
+				}
+				var nota3 = row.insertCell(-1);
+				nota3.innerHTML = val.nota3;
+				if(val.nota3 < 4 ){	
+					nota3.style.color = "red";	
+				}else{
+					nota3.style.color = "blue";	
+				}
+				var nota4 = row.insertCell(-1);
+				nota4.innerHTML = val.nota4;
+				if(val.nota4 < 4 ){	
+					nota4.style.color = "red";	
+				}else{
+					nota4.style.color = "blue";	
+				}	
+				
+				
+				//PROMEDIO
+				var prom = row.insertCell(-1);
+				prom.innerHTML = ((val.nota1+val.nota2+val.nota3+val.nota4)/4).toFixed(2)+"";
+				
+				//ESTADO
+				
+				
+            });
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Get JSON data</button>
+
+<table id="table" border="1">
+
+</table>
+
+</body>
+</html>
